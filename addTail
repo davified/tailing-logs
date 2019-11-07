@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "'$3': $3"
+
+(exec tail -F $3) &
+echo $! >> /tmp/pids
